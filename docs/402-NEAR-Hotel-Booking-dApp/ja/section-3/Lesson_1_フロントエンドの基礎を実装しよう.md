@@ -2,9 +2,9 @@
 
 ここからはフロントエンドの作成になりますが、まずは、前回のセクションまでで完成したスマートスマートコントラクトをデプロイしているアカウント ID が使用されるようにします。
 
-`near-hotel-booking-dapp/neardev/dev-account.env`内の`CONTRACT_NAME`を書き換えます。
+`near-hotel-booking-dapp/contract/neardev/dev-account.env`内の`CONTRACT_NAME`を書き換えます。
 
-`near-hotel-booking-dapp/neardev/dev-account.env`
+`near-hotel-booking-dapp/contract/neardev/dev-account.env`
 
 ```
 CONTRACT_NAME=YOUR_CONNTRACT_ID
