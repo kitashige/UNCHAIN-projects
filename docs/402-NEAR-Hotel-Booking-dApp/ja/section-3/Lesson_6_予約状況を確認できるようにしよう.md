@@ -6,7 +6,7 @@
 
 以下のコードで、`GuestBookedList.js`を更新しましょう。
 
-`frontend/asserts/js/pages/GuestBookedList画面.js`
+`frontend/asserts/js/pages/GuestBookedList.js`
 
 ```js
 import React, { useEffect, useState } from "react";
