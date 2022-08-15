@@ -18,9 +18,9 @@ CONTRACT_NAME=contract.hotel_booking.testnet
 
 ### 🔌 スマートコントラクトとの接続を実装しよう
 
-`frontend/assets/js/near/utils.js`に、NEAR Wallet のデータやスマートコントラクトのメソッドを設定するための実装を行います。以下のように書き換えてください
+`frontend/assets/js/near-api.js`に、NEAR Wallet のデータやスマートコントラクトのメソッドを設定するための実装を行います。以下のように書き換えてください
 
-`frontend/assets/js/near/utils.js`
+`frontend/assets/js/near-api.js`
 
 ```javascript
 import { connect, Contract, keyStores, WalletConnection } from "near-api-js";
@@ -28,7 +28,7 @@ import {
   formatNearAmount,
   parseNearAmount,
 } from "near-api-js/lib/utils/format";
-import getConfig from "./config";
+import getConfig from "./near-config";
 
 // トランザクション実行時に使用するGASの上限を設定
 const GAS = 100000000000000;
@@ -334,6 +334,15 @@ await window.contract.book_room(
   GAS,
   price
 );
+```
+
+また、`frontend/assets/js/near-config.js`を以下のように書き換えてください
+
+`frontend/assets/js/near-config.js`
+
+```diff
+- export function getConfig(env) {
++ export default function getConfig(env) {
 ```
 
 これで、スマートコントラクトのメソッドを呼び出す準備ができました。
