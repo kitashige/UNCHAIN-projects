@@ -110,6 +110,7 @@ near-hotel-booking-dapp/
 ├── frontend/
 ├── integration-tests/
 ├── node_modules/
+├── package-lock.json
 ├── package.json
 ```
 
@@ -123,13 +124,13 @@ npm start
 
 あらかじめ用意されているスマートコントラクトがコンパイル・デプロイされ、Web アプリケーションが起動されます。
 
-![](/public/images/403-NEAR-Hotel-Booking-dApp/0_2_2.png)
+![](/public/images/402-NEAR-Hotel-Booking-dApp/0_2_2.png)
 
 動作確認ができたので、これで環境構築＋新規プロジェクトの雛形作成は完了です！
 
 ### 🙋‍♂️ 質問する
 
-ここまでの作業で何かわからないことがある場合は、Discord の `#section-0` で質問をしてください。
+ここまでの作業で何かわからないことがある場合は、Discord の `#near-booking-dapp` で質問をしてください。
 
 ヘルプをするときのフローが円滑になるので、エラーレポートには下記の 4 点を記載してください ✨
 
